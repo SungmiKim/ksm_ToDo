@@ -1,0 +1,110 @@
+@import "reset.css";
+
+body {
+  background-color: #b2bec3;
+  font-family: "Ubuntu", sans-serif;
+}
+.form,
+.greetings,
+.modify {
+  display: none;
+}
+
+.showing {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.5;
+  }
+}
+.bgImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.5;
+  animation: fadeIn 0.5s linear;
+}
+
+.weather {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.weather__column {
+  text-align: center;
+  margin-right: 30px;
+  background-color: #70a1ff;
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid #ffffff;
+}
+
+.js-clock > h1 {
+  font-weight: 500;
+  font-size: 70px;
+  margin: 20px;
+}
+
+main {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.greetings {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.js-toDoForm > input,
+.js-form > input {
+  border: none;
+  height: 25px;
+  width: 250px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+input:focus {
+  outline: none;
+}
+
+.js-toDoList {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.js-toDoList > li {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+i {
+  color: red;
+  font-weight: 500;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.modify {
+  background-color: #f5f6fa;
+  border-radius: 5px;
+  opacity: 0.7;
+  margin-bottom: 10px;
+  font-size: 10px;
+  padding: 5px;
+}

@@ -5,22 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>To do</title>
   </head>
-  <link rel="stylesheet" href="index.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,500;1,300;1,500&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
+    integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q"
+    crossorigin="anonymous"
+  />
+  <link rel="stylesheet" href="css/index.css" />
   <body>
-    <div class="js-clock">
-      <h1>00:00</h1>
+    <!-- weather -->
+    <div class="weather">
+      <div class="weather__column">
+        <div class="weatherIcons"></div>
+        <span class="js-weather"></span>
+      </div>
     </div>
-    <form class="js-form form">
-      <input type="text" placeholder="당신의 이름은 무엇인가요?" />
-    </form>
-    <h4 class="js-greetings greetings"></h4>
-    <form class="js-toDoForm">
-      <input type="text" placeholder="오늘의 할일" />
-    </form>
-    <ul class="js-toDoList"></ul>
+    <!-- weather end -->
+
+    <!-- ToDo -->
+    <main>
+      <div class="js-clock">
+        <h1>00:00</h1>
+      </div>
+      <form class="js-form form">
+        <input type="search" placeholder="당신의 이름은 무엇인가요?" />
+      </form>
+
+      <h4 class="js-greetings greetings"></h4>
+      <div class="modify"></div>
+      <form class="js-toDoForm">
+        <input type="search" placeholder="오늘의 할일" />
+      </form>
+      <ul class="js-toDoList"></ul>
+    </main>
+    <!-- ToDo end -->
+
     <!-- script -->
-    <script src="clock.js"></script>
-    <script src="greeting.js"></script>
-    <script src="todo.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/greeting.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/bg.js"></script>
+    <script src="js/weather.js"></script>
   </body>
 </html>
