@@ -43,7 +43,9 @@ function handleGeoSucces(position) {
 }
 
 function handleGeoError() {
-  console.log("Cant access geo location");
+  weather.classList.add("js-no-weather");
+  weather.innerHTML =
+    "내 위치를 파악하도록 새로고침 <br>후 '허용' 버튼을 눌러주세요 <i class='far fa-dizzy'></i>";
 }
 
 function askForCoords() {

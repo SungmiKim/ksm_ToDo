@@ -25,7 +25,7 @@ function askForName() {
 function paintGreeting(text) {
   form.classList.remove(SHOWING_CLASS_NAME);
   greeting.classList.add(SHOWING_CLASS_NAME);
-  greeting.innerHTML = `Hello "${text}"`;
+  greeting.innerHTML = `반갑습니다. "${text}"님,`;
 
   modify.innerHTML = "이름변경";
   modify.classList.add(SHOWING_CLASS_NAME);

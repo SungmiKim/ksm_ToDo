@@ -1,3 +1,3 @@
-# sm_ToDo
+# 오늘의 할일
 
-To do
+## To do Application
